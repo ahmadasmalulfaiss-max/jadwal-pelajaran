@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7fc">
+    <title>Jadwal Pelajaran | XI RPL 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-icon">S</span>
+            <span>School<span class="brand-blue">Time.</span></span>
+        </a>
+        <span class="portal-label">STUDENT PORTAL</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">STUDENT DASHBOARD</span>
+                <h1>Jadwal Pelajaran<span>.</span></h1>
+                <p class="hero-description">
+                    Atur waktumu, raih prestasimu.
+                    Semua jadwal kelas dalam satu tempat.
+                </p>
+            </div>
+
+            <div class="class-card">
+                <span class="class-label">KELAS KAMU</span>
+                <h2>XI RPL 2</h2>
+                <p>Rekayasa Perangkat Lunak</p>
+                <div class="class-divider"></div>
+                <span class="academic-year">TAHUN AJARAN 2026/2027</span>
+            </div>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <div class="stat-icon blue-icon">📅</div>
+                <div>
+                    <p>Hari Sekolah</p>
+                    <h3>6 Hari</h3>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon purple-icon">📚</div>
+                <div>
+                    <p>Hari Belajar</p>
+                    <h3>Senin - Sabtu</h3>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green-icon">⏰</div>
+                <div>
+                    <p>Mulai Aktivitas</p>
+                    <h3>06.45 WIB</h3>
+                </div>
+            </article>
+        </section>
+
+        <section class="schedule-card">
+            <div class="schedule-heading">
+                <div>
+                    <span class="eyebrow">WEEKLY TIMETABLE</span>
+                    <h2>Jadwal Mingguan</h2>
+                    <p>Pilih hari untuk melihat jadwal pelajaran.</p>
+                </div>
+                <span class="live-badge">
+                    <span class="live-dot"></span>
+                    XI RPL 2
+                </span>
+            </div>
+
+            <nav class="day-tabs" aria-label="Pilih hari">
+                <button class="day-tab active" data-day="senin" aria-pressed="true">
+                    <span>Sen</span>
+                    <small>01</small>
+                </button>
+                <button class="day-tab" data-day="selasa" aria-pressed="false">
+                    <span>Sel</span>
+                    <small>02</small>
+                </button>
+                <button class="day-tab" data-day="rabu" aria-pressed="false">
+                    <span>Rab</span>
+                    <small>03</small>
+                </button>
+                <button class="day-tab" data-day="kamis" aria-pressed="false">
+                    <span>Kam</span>
+                    <small>04</small>
+                </button>
+                <button class="day-tab" data-day="jumat" aria-pressed="false">
+                    <span>Jum</span>
+                    <small>05</small>
+                </button>
+                <button class="day-tab" data-day="sabtu" aria-pressed="false">
+                    <span>Sab</span>
+                    <small>06</small>
+                </button>
+            </nav>
+
+            <div class="table-heading">
+                <div>
+                    <h3 id="selected-day">Senin</h3>
+                    <p id="schedule-count">Jadwal kegiatan kelas</p>
+                </div>
+                <span class="time-label">WAKTU WIB</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>WAKTU</th>
+                            <th>KEGIATAN / MATA PELAJARAN</th>
+                            <th>GURU</th>
+                            <th>JENIS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td colspan="4" class="loading">
+                                Memuat jadwal...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-footer">
+                <span><span class="legend-dot lesson-dot"></span> Pelajaran</span>
+                <span><span class="legend-dot break-dot"></span> Istirahat / kegiatan</span>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-brand">SchoolTime.</div>
+            <p>Made for XI RPL 2 · 2026</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
